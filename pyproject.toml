@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "fastapi-blog"
+version = "0.1.0"
+description = ""
+authors = ["unkown <unkown@unkown.com>"]
+readme = "README.md"
+packages = [{ include = "fastapi_blog" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.99.1"
+uvicorn = "^0.22.0"
+sqlalchemy = "^2.0.17"
+python-multipart = "^0.0.6"
+aiofiles = "^23.1.0"
+pydantic = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "supplemental"
+
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "default"
+
+
+[[tool.poetry.source]]
+name = "doubanio"
+url = "https://pypi.doubanio.com/simple/"
+priority = "supplemental"
